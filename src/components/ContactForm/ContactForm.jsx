@@ -6,7 +6,6 @@ import { useDispatch } from "react-redux";
 import { addContact } from "../../redux/contactsOps";
 import { defaultValue } from "../../redux/contactsSlice";
 
-
 const formSchema = Yup.object().shape({
   name: Yup.string()
     .min(3, "Too Short!")
@@ -36,7 +35,6 @@ ContactForm = () => {
       onSubmit={handleSubmit}
       validationSchema={formSchema}
         >
-
         <Form className={css.form}>
         <div className={css.group}>
           <label htmlFor={nameId} className={css.label}>
